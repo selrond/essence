@@ -7,7 +7,7 @@ export async function getServerSideProps() {
   const data = await response.json()
   return {
     props: {
-      data
+      data,
     },
   }
 }
@@ -22,12 +22,12 @@ const Home: NextPage = ({ data }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Heading>Essence reader</Heading>
-        {data.items.map(({ title, content }) =>
+        {data.items.map(({ title, content }) => (
           <Box key={title} bg="gray.100" p="4">
             <Heading size="sm">{title}</Heading>
-            <div dangerouslySetInnerHTML={{ __html: content}}></div>
+            <div dangerouslySetInnerHTML={{ __html: content }}></div>
           </Box>
-        )}
+        ))}
       </Grid>
     </Container>
   )
