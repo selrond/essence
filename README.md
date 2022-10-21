@@ -1,2 +1,3 @@
 # essence
-Essence will be a feed reader. 
+
+Essence will be a feed reader.

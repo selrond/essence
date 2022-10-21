@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "noEmit": true
+  },
+  "include": ["*.ts"],
+  "ts-node": {
+    "esm": true
+  }
+}
+
